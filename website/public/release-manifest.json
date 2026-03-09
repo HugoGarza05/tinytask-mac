@@ -1,14 +1,14 @@
 {
   "version": "0.1.0-preview",
   "channel": "preview",
-  "publishedAt": "2026-03-09T00:00:00Z",
+  "publishedAt": "2026-03-09T04:15:00Z",
   "macos": {
     "status": "preview",
     "minVersion": "macOS 13.0",
-    "dmgUrl": "",
-    "zipUrl": "",
-    "checksumUrl": "https://github.com/hugogarza/tinytask-mac/releases",
-    "releaseNotesUrl": "https://github.com/hugogarza/tinytask-mac/releases"
+    "dmgUrl": "https://github.com/HugoGarza05/tinytask-mac/releases/download/v0.1.0-preview/TinyTaskMac.dmg",
+    "zipUrl": "https://github.com/HugoGarza05/tinytask-mac/releases/download/v0.1.0-preview/TinyTaskMac.zip",
+    "checksumUrl": "https://github.com/HugoGarza05/tinytask-mac/releases/download/v0.1.0-preview/SHA256SUMS.txt",
+    "releaseNotesUrl": "https://github.com/HugoGarza05/tinytask-mac/releases/tag/v0.1.0-preview"
   },
   "windows": {
     "status": "planned"
