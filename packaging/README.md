@@ -24,3 +24,13 @@ The generated project depends on the local Swift package and produces a standard
 ```
 
 Those scripts create an unsigned `.app`, `.zip`, `.dmg`, and `SHA256SUMS.txt` under `.dist/`.
+
+## Stable release readiness
+
+Run the release prerequisite checker before attempting a signed build:
+
+```bash
+./scripts/check_release_prereqs.sh HugoGarza05/tinytask-mac
+```
+
+See [docs/stable-release-checklist.md](/Users/hugogarza/Projects/gpt-5.4-projects/tinytask-mac/docs/stable-release-checklist.md) for the full signing and notarization setup.

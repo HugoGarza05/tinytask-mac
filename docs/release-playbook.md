@@ -1,5 +1,7 @@
 # TinyTaskMac Release Playbook
 
+For the full stable-release checklist, including Apple certificate setup and GitHub secrets, see [stable-release-checklist.md](/Users/hugogarza/Projects/gpt-5.4-projects/tinytask-mac/docs/stable-release-checklist.md).
+
 ## Preview build
 
 ```bash

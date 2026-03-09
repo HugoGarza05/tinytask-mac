@@ -64,6 +64,12 @@ xcodegen generate
 
 See [`packaging/README.md`](/Users/hugogarza/Projects/gpt-5.4-projects/tinytask-mac/packaging/README.md) and [`docs/release-playbook.md`](/Users/hugogarza/Projects/gpt-5.4-projects/tinytask-mac/docs/release-playbook.md) for packaging and release flow details.
 
+For stable macOS signing and notarization prep, run:
+
+```bash
+./scripts/check_release_prereqs.sh HugoGarza05/tinytask-mac
+```
+
 ## Troubleshooting
 
 If `swift run TinyTaskMac` fails with a `PCH was compiled with module cache path ...` error after moving or renaming the repo directory, clear SwiftPM's build cache and rebuild:
