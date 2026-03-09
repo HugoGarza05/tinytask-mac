@@ -1,0 +1,19 @@
+{
+  "version": "0.1.0-preview",
+  "channel": "preview",
+  "publishedAt": "2026-03-09T00:00:00Z",
+  "macos": {
+    "status": "preview",
+    "minVersion": "macOS 13.0",
+    "dmgUrl": "",
+    "zipUrl": "",
+    "checksumUrl": "https://github.com/hugogarza/tinytask-mac/releases",
+    "releaseNotesUrl": "https://github.com/hugogarza/tinytask-mac/releases"
+  },
+  "windows": {
+    "status": "planned"
+  },
+  "linux": {
+    "status": "planned"
+  }
+}

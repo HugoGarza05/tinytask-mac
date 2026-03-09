@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" role="img" aria-label="TinyTaskMac setup flow">
+  <defs>
+    <linearGradient id="panel" x1="140" x2="760" y1="120" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#102f37" />
+      <stop offset="1" stop-color="#081f26" />
+    </linearGradient>
+    <linearGradient id="glow" x1="160" x2="840" y1="160" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57f5ff" stop-opacity=".14" />
+      <stop offset="1" stop-color="#ff8471" stop-opacity=".08" />
+    </linearGradient>
+  </defs>
+  <rect width="960" height="680" rx="32" fill="#04151a" />
+  <rect x="88" y="72" width="784" height="536" rx="30" fill="url(#panel)" stroke="rgba(255,255,255,0.1)" />
+  <rect x="88" y="72" width="784" height="536" rx="30" fill="url(#glow)" />
+  <text x="140" y="154" fill="#57f5ff" font-family="Avenir Next, Avenir, sans-serif" font-size="24" font-weight="700" letter-spacing="5">SETUP CHECKLIST</text>
+  <text x="140" y="212" fill="#ffffff" font-family="Avenir Next, Avenir, sans-serif" font-size="42" font-weight="900">Grant permissions before recording or playback</text>
+
+  <rect x="140" y="256" width="680" height="96" rx="24" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+  <circle cx="194" cy="304" r="22" fill="#57f5ff" opacity=".18" />
+  <path fill="#57f5ff" d="M184 304.5l7 7 17-19 6 5-23 26-13-13z" />
+  <text x="240" y="300" fill="#ffffff" font-family="Avenir Next, Avenir, sans-serif" font-size="24" font-weight="800">Accessibility</text>
+  <text x="240" y="332" fill="#d5eff4" font-family="Avenir Next, Avenir, sans-serif" font-size="18">Open the privacy pane, approve TinyTaskMac, then re-check status.</text>
+  <rect x="652" y="280" width="128" height="46" rx="23" fill="#57f5ff" />
+  <text x="681" y="310" fill="#04151a" font-family="Avenir Next, Avenir, sans-serif" font-size="18" font-weight="800">Grant</text>
+
+  <rect x="140" y="380" width="680" height="96" rx="24" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)" />
+  <circle cx="194" cy="428" r="22" fill="#ff8471" opacity=".18" />
+  <rect x="184" y="418" width="20" height="20" rx="5" fill="#ff8471" />
+  <text x="240" y="424" fill="#ffffff" font-family="Avenir Next, Avenir, sans-serif" font-size="24" font-weight="800">Input Monitoring</text>
+  <text x="240" y="456" fill="#d5eff4" font-family="Avenir Next, Avenir, sans-serif" font-size="18">Use the direct pane shortcut, enable access, then relaunch if macOS requires it.</text>
+  <rect x="592" y="404" width="188" height="46" rx="23" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" />
+  <text x="624" y="434" fill="#ffffff" font-family="Avenir Next, Avenir, sans-serif" font-size="18" font-weight="800">Open Input Monitoring</text>
+
+  <rect x="140" y="510" width="214" height="50" rx="25" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.1)" />
+  <text x="184" y="542" fill="#ffffff" font-family="Avenir Next, Avenir, sans-serif" font-size="18" font-weight="800">Re-check Permissions</text>
+  <rect x="610" y="510" width="170" height="50" rx="25" fill="#57f5ff" />
+  <text x="670" y="542" fill="#04151a" font-family="Avenir Next, Avenir, sans-serif" font-size="18" font-weight="900">Continue</text>
+</svg>

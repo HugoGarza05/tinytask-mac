@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download TinyTaskMac for macOS</title>
+    <meta name="description" content="Stable macOS download entrypoint for TinyTaskMac releases." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="module" src="/src/download.js"></script>
+  </head>
+  <body class="site-shell font-body text-sand antialiased">
+    <main class="min-h-screen px-6 py-10 lg:px-8">
+      <div class="mx-auto flex min-h-[calc(100vh-5rem)] max-w-4xl items-center justify-center">
+        <section class="download-panel reveal-card is-visible">
+          <p class="eyebrow">macOS Download</p>
+          <h1 class="section-title max-w-2xl">Preparing your TinyTaskMac download route.</h1>
+          <p class="section-copy" data-download-status>
+            Loading the current release manifest and checking whether a stable or preview build is available.
+          </p>
+          <dl class="download-grid">
+            <div>
+              <dt>Version</dt>
+              <dd data-release-version>Loading…</dd>
+            </div>
+            <div>
+              <dt>Channel</dt>
+              <dd data-release-channel>Loading…</dd>
+            </div>
+            <div>
+              <dt>Minimum OS</dt>
+              <dd data-macos-min-version>Loading…</dd>
+            </div>
+          </dl>
+          <div class="download-actions">
+            <a class="button button-primary" data-primary-download href="https://github.com/hugogarza/tinytask-mac/releases">Open macOS download</a>
+            <a class="button button-secondary" data-zip-download href="https://github.com/hugogarza/tinytask-mac/releases">ZIP fallback</a>
+            <a class="button button-secondary" data-release-notes-link href="https://github.com/hugogarza/tinytask-mac/releases">Release notes</a>
+          </div>
+          <p class="download-help">
+            If the automatic redirect does not begin, use one of the links above. Checksums and release notes stay available even when public binaries are still in preview.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

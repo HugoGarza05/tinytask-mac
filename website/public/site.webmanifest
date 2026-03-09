@@ -1,0 +1,16 @@
+{
+  "name": "TinyTaskMac",
+  "short_name": "TinyTaskMac",
+  "description": "Precision macro automation for long sessions on macOS.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#031115",
+  "theme_color": "#031115",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

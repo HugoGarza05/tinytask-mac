@@ -1,0 +1,50 @@
+name: TinyTaskMac
+
+options:
+  minimumXcodeGenVersion: 2.39.1
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+
+packages:
+  TinyTaskMacPackage:
+    path: ../..
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  TinyTaskMacApp:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: ../macos/AppHost/Sources
+      - path: ../macos/AppHost/Assets.xcassets
+    dependencies:
+      - package: TinyTaskMacPackage
+        product: TinyTaskMacKit
+    info:
+      path: ../macos/AppHost/Info.plist
+    settings:
+      base:
+        PRODUCT_NAME: TinyTaskMac
+        PRODUCT_BUNDLE_IDENTIFIER: com.hugogarza.tinytaskmac
+        MARKETING_VERSION: 0.1.0
+        CURRENT_PROJECT_VERSION: 1
+        CODE_SIGN_STYLE: Automatic
+        SWIFT_VERSION: 6.0
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ENABLE_HARDENED_RUNTIME: YES
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+        OTHER_CODE_SIGN_FLAGS:
+          - "--timestamp"
+    scheme:
+      gatherCoverageData: false
+      configVariants:
+        - Debug
+        - Release

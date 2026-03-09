@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="TinyTaskMac">
+  <defs>
+    <linearGradient id="bg" x1="90" x2="1100" y1="80" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#031115" />
+      <stop offset="1" stop-color="#071d22" />
+    </linearGradient>
+    <linearGradient id="cyan" x1="300" x2="920" y1="160" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57f5ff" />
+      <stop offset="1" stop-color="#12b8c4" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="930" cy="140" r="140" fill="#57f5ff" opacity=".12" />
+  <circle cx="210" cy="470" r="120" fill="#ff8471" opacity=".08" />
+  <text x="100" y="210" fill="#57f5ff" font-family="Avenir Next, Avenir, Segoe UI, sans-serif" font-size="26" font-weight="700" letter-spacing="8">TINYTASKMAC</text>
+  <text x="100" y="320" fill="#ffffff" font-family="Avenir Next, Avenir, Segoe UI, sans-serif" font-size="82" font-weight="900">Precision macro</text>
+  <text x="100" y="400" fill="#ffffff" font-family="Avenir Next, Avenir, Segoe UI, sans-serif" font-size="82" font-weight="900">automation for long sessions</text>
+  <text x="100" y="470" fill="#d5eff4" font-family="Avenir Next, Avenir, Segoe UI, sans-serif" font-size="28">Native macOS loops, timed interrupts, target lock, and guided setup.</text>
+  <rect x="770" y="160" width="320" height="230" rx="28" fill="#0d2a31" stroke="rgba(255,255,255,0.1)" />
+  <rect x="808" y="212" width="242" height="54" rx="20" fill="rgba(87,245,255,0.12)" stroke="rgba(87,245,255,0.24)" />
+  <rect x="808" y="292" width="120" height="60" rx="20" fill="rgba(255,255,255,0.05)" />
+  <rect x="946" y="292" width="104" height="60" rx="20" fill="rgba(255,132,113,0.14)" />
+  <path fill="url(#cyan)" d="M846 230h166v18H846z" opacity=".8" />
+</svg>

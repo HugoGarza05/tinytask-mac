@@ -1,0 +1,8 @@
+.DS_Store
+.build_pre_move_cache/
+.build/
+website/dist/
+website/node_modules/
+website/.netlify/
+.dist/
+packaging/xcodegen/TinyTaskMac.xcodeproj/

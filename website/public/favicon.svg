@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TinyTaskMac">
+  <defs>
+    <linearGradient id="a" x1="16" x2="108" y1="20" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#57f5ff" />
+      <stop offset="1" stop-color="#12b8c4" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#031115" />
+  <path fill="url(#a)" d="M30 36h68v12H72v44H56V48H30z" />
+  <circle cx="93" cy="93" r="12" fill="#ff8471" opacity=".9" />
+</svg>

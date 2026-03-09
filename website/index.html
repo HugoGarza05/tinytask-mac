@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TinyTaskMac | Precision Macro Automation for Long Sessions</title>
+    <meta
+      name="description"
+      content="TinyTaskMac is a native macOS macro tool for long grinding loops, timed interrupt routines, target locking, and resilient playback."
+    />
+    <meta name="theme-color" content="#031115" />
+    <meta property="og:title" content="TinyTaskMac" />
+    <meta
+      property="og:description"
+      content="Precision macro automation for long sessions, relog routines, and focused playback on macOS."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:url" content="https://tinytaskmac.netlify.app/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TinyTaskMac" />
+    <meta
+      name="twitter:description"
+      content="Native macOS macro automation for long loops, timed interrupts, and focus-safe grinding."
+    />
+    <meta name="twitter:image" content="/og-image.svg" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="site-shell font-body text-sand antialiased">
+    <div class="site-noise"></div>
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-8">
+        <a class="flex items-center gap-3 font-display text-sm font-semibold uppercase tracking-[0.24em]" href="#">
+          <span class="brand-mark" aria-hidden="true"></span>
+          TinyTaskMac
+        </a>
+        <nav class="hidden items-center gap-8 text-sm text-sand/70 md:flex">
+          <a class="transition hover:text-cyan" href="#features">Features</a>
+          <a class="transition hover:text-cyan" href="#routines">Routines</a>
+          <a class="transition hover:text-cyan" href="#setup">Setup</a>
+          <a class="transition hover:text-cyan" href="#faq">FAQ</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a class="button button-secondary hidden sm:inline-flex" href="#roadmap">Roadmap</a>
+          <a class="button button-primary" href="/download/macos">Download for macOS</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section px-6 pb-20 pt-16 lg:px-8 lg:pt-24">
+        <div class="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div class="space-y-8">
+            <div class="inline-flex items-center gap-3 rounded-full border border-cyan/20 bg-cyan/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-cyan">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              macOS available now
+            </div>
+            <div class="space-y-5">
+              <p class="eyebrow">Precision Macro Automation</p>
+              <h1 class="max-w-4xl font-display text-5xl font-black leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl">
+                Keep the main loop running without losing control of your Mac.
+              </h1>
+              <p class="max-w-2xl text-lg leading-8 text-sand/70">
+                TinyTaskMac records real gameplay input, replays it with consistent timing, keeps the target app
+                focused when you want it to, and lets you interrupt long sessions with timed recovery routines.
+              </p>
+            </div>
+            <div class="flex flex-col gap-4 sm:flex-row">
+              <a class="button button-primary" href="/download/macos">Download for macOS</a>
+              <a class="button button-secondary" href="#features">View Features</a>
+            </div>
+            <div class="flex flex-wrap gap-4 text-sm text-sand/70">
+              <div class="status-pill">
+                <span class="status-label">Current release</span>
+                <span class="status-value" data-release-version>Loading…</span>
+              </div>
+              <div class="status-pill">
+                <span class="status-label">Channel</span>
+                <span class="status-value uppercase" data-release-channel>Loading…</span>
+              </div>
+              <div class="status-pill">
+                <span class="status-label">Platforms</span>
+                <span class="status-value" data-platform-summary>macOS now, Windows and Linux planned</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stack" data-parallax>
+            <div class="orb orb-cyan"></div>
+            <div class="orb orb-ember"></div>
+            <article class="dashboard tilt-card reveal-card" data-reveal>
+              <header class="dashboard-head">
+                <div class="window-dots" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="dashboard-meta">Live session routing</p>
+              </header>
+              <div class="dashboard-grid">
+                <section class="dashboard-main">
+                  <div class="dashboard-chip">Main loop active</div>
+                  <h2>Dungeon route</h2>
+                  <p>Target lock, scaled timing, focus lock, and routine scheduler all aligned to one app.</p>
+                  <div class="dashboard-bars">
+                    <div>
+                      <span>Playback timing</span>
+                      <strong>14ms</strong>
+                    </div>
+                    <div>
+                      <span>Routine health</span>
+                      <strong>99.8%</strong>
+                    </div>
+                  </div>
+                </section>
+                <section class="dashboard-side">
+                  <div class="dashboard-card">
+                    <span>Preferred playback app</span>
+                    <strong>Recorded target or saved app</strong>
+                  </div>
+                  <div class="dashboard-card dashboard-card-alert">
+                    <span>Timed interrupt</span>
+                    <strong>Relog / recovery macro every N minutes</strong>
+                  </div>
+                  <div class="dashboard-card">
+                    <span>Refocus policy</span>
+                    <strong>Bring target back to front without prompts</strong>
+                  </div>
+                </section>
+              </div>
+            </article>
+            <article class="floating-panel tilt-card reveal-card" data-reveal>
+              <p class="floating-label">Routine stack</p>
+              <div class="floating-timeline">
+                <span class="timeline-main">Main grind loop</span>
+                <span class="timeline-pause">Interrupt</span>
+                <span class="timeline-main">Resume</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 py-20 lg:px-8" id="features">
+        <div class="mx-auto max-w-7xl">
+          <div class="section-heading reveal-card" data-reveal>
+            <p class="eyebrow">What It Does</p>
+            <h2 class="section-title">A native macOS workflow for loops, relogs, and focused playback.</h2>
+            <p class="section-copy">
+              Built for long sessions where a single loop is not enough. TinyTaskMac handles the repeatable path,
+              the timed interruption, and the return to the main routine.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <article class="feature-card tilt-card reveal-card" data-reveal>
+              <div class="feature-icon">TL</div>
+              <h3>Target Lock</h3>
+              <p>Keep macro playback attached to the intended app so the desktop does not receive stray input.</p>
+            </article>
+            <article class="feature-card tilt-card reveal-card" data-reveal>
+              <div class="feature-icon">FP</div>
+              <h3>Focus Protection</h3>
+              <p>Optionally pull the target app back to the front if another window covers it during playback.</p>
+            </article>
+            <article class="feature-card tilt-card reveal-card" data-reveal>
+              <div class="feature-icon">PA</div>
+              <h3>Preferred App Override</h3>
+              <p>Save a preferred playback app globally and let it override each macro’s recorded target when needed.</p>
+            </article>
+            <article class="feature-card tilt-card reveal-card" data-reveal>
+              <div class="feature-icon">RT</div>
+              <h3>Routine Scheduler</h3>
+              <p>Run one main loop forever and insert periodic interrupt macros by timer and priority.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 py-20 lg:px-8" id="routines">
+        <div class="mx-auto max-w-7xl">
+          <div class="routine-panel reveal-card" data-reveal>
+            <div class="section-heading section-heading-tight">
+              <p class="eyebrow">Timed Interrupt Routines</p>
+              <h2 class="section-title">Pause the grind, run the recovery flow, then start the main macro again.</h2>
+              <p class="section-copy">
+                Use one macro as the main loop and schedule supporting macros for relogging, memory-reset patterns, or
+                other periodic maintenance. Higher-priority interrupts run first when multiple timers line up.
+              </p>
+            </div>
+
+            <div class="routine-visual">
+              <div class="routine-labels">
+                <span>T+00</span>
+                <span>T+20</span>
+                <span>T+40</span>
+                <span>T+60</span>
+              </div>
+              <div class="routine-row">
+                <span>Main</span>
+                <div class="routine-track">
+                  <div class="routine-segment routine-segment-main">Grinding / route macro</div>
+                  <div class="routine-segment routine-segment-pause">Paused for interrupt</div>
+                  <div class="routine-segment routine-segment-main">Restart main macro</div>
+                </div>
+              </div>
+              <div class="routine-row">
+                <span>Interrupt</span>
+                <div class="routine-track">
+                  <div class="routine-gap"></div>
+                  <div class="routine-segment routine-segment-alert">Relog / recovery macro</div>
+                  <div class="routine-gap routine-gap-wide"></div>
+                </div>
+              </div>
+              <div class="routine-points">
+                <article>
+                  <strong>01</strong>
+                  <p>Main loop handles the normal grind path.</p>
+                </article>
+                <article>
+                  <strong>02</strong>
+                  <p>Interrupt macro takes over on schedule or when recovery is needed.</p>
+                </article>
+                <article>
+                  <strong>03</strong>
+                  <p>Main loop restarts cleanly after the interrupt finishes.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 py-20 lg:px-8" id="setup">
+        <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="section-heading reveal-card" data-reveal>
+            <p class="eyebrow">Permission Setup</p>
+            <h2 class="section-title">First-run guidance instead of trial-and-error system prompts.</h2>
+            <p class="section-copy">
+              TinyTaskMac now has a dedicated setup flow for Accessibility and Input Monitoring, with direct buttons to
+              the right macOS privacy panes and live re-checks before recording or playback begins.
+            </p>
+            <div class="setup-list">
+              <div class="setup-item">
+                <strong>Accessibility</strong>
+                <span>Needed to send keyboard and mouse events to the target app.</span>
+              </div>
+              <div class="setup-item">
+                <strong>Input Monitoring</strong>
+                <span>Needed to record your own inputs so new macros can be captured.</span>
+              </div>
+              <div class="setup-item">
+                <strong>Guided Re-check</strong>
+                <span>Setup buttons reopen the exact privacy panes and confirm status without modal alerts.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="setup-preview reveal-card" data-reveal>
+            <img alt="TinyTaskMac setup checklist preview" src="/assets/setup-flow.svg" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 py-20 lg:px-8" id="roadmap">
+        <div class="mx-auto max-w-7xl">
+          <div class="section-heading reveal-card" data-reveal>
+            <p class="eyebrow">Roadmap</p>
+            <h2 class="section-title">macOS first, with packaging and onboarding getting production-ready next.</h2>
+            <p class="section-copy">
+              The core recorder, playback engine, preferred app targeting, and routine scheduler are already in place.
+              The next phase is about launch quality: app bundles, installer artifacts, signing, and onboarding.
+            </p>
+          </div>
+          <div class="mt-12 grid gap-6 lg:grid-cols-3">
+            <article class="roadmap-card reveal-card" data-reveal>
+              <span class="roadmap-state roadmap-state-live">Now</span>
+              <h3>Native macOS Automation</h3>
+              <p>Macro recording, playback, focus lock, preferred app targeting, and timed interrupt routines.</p>
+            </article>
+            <article class="roadmap-card reveal-card" data-reveal>
+              <span class="roadmap-state roadmap-state-next">Next</span>
+              <h3>Packaged App + Guided Setup</h3>
+              <p>Double-clickable app bundles, DMG/ZIP releases, and a first-run permission checklist.</p>
+            </article>
+            <article class="roadmap-card reveal-card" data-reveal>
+              <span class="roadmap-state roadmap-state-later">Later</span>
+              <h3>Windows and Linux</h3>
+              <p>Dedicated platform-specific builds after the macOS distribution path is stable.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 py-20 lg:px-8" id="faq">
+        <div class="mx-auto max-w-5xl">
+          <div class="section-heading reveal-card" data-reveal>
+            <p class="eyebrow">FAQ</p>
+            <h2 class="section-title">What launch users need to know.</h2>
+          </div>
+          <div class="mt-12 grid gap-4">
+            <details class="faq-item reveal-card" data-reveal>
+              <summary>Is macOS supported right now?</summary>
+              <p>Yes. TinyTaskMac is built for macOS first, with website downloads and packaged releases centered on Mac.</p>
+            </details>
+            <details class="faq-item reveal-card" data-reveal>
+              <summary>Can it handle long grinding sessions?</summary>
+              <p>Yes. The current feature set is designed around reliable loop playback, target focus control, and timed interrupt routines.</p>
+            </details>
+            <details class="faq-item reveal-card" data-reveal>
+              <summary>Can a relog macro interrupt the main loop?</summary>
+              <p>Yes. Routines can run one main macro continuously and insert higher-priority timed interrupts that restart the main loop afterward.</p>
+            </details>
+            <details class="faq-item reveal-card" data-reveal>
+              <summary>Why does it need permissions?</summary>
+              <p>macOS requires Accessibility to send synthetic input and Input Monitoring to record your own inputs for new macros.</p>
+            </details>
+            <details class="faq-item reveal-card" data-reveal>
+              <summary>Are Windows and Linux available?</summary>
+              <p>Not yet. The site tracks those platforms as planned so Mac users get the first stable release path.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell px-6 pb-24 pt-8 lg:px-8">
+        <div class="mx-auto max-w-7xl">
+          <div class="cta-panel reveal-card" data-reveal>
+            <div>
+              <p class="eyebrow">Launch Status</p>
+              <h2 class="section-title max-w-3xl">macOS download routing is live, with release metadata pulled from the in-repo manifest.</h2>
+              <p class="section-copy">
+                The current site reads version and channel data directly from the checked-in release manifest and routes
+                all Mac download traffic through a stable `/download/macos` entrypoint.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a class="button button-primary" href="/download/macos">Download for macOS</a>
+              <a class="button button-secondary" data-release-notes-link href="https://github.com/hugogarza/tinytask-mac/releases">Release Notes</a>
+              <a class="button button-secondary" data-checksum-link href="https://github.com/hugogarza/tinytask-mac/releases">Checksums</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 px-6 py-10 lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.4fr_0.8fr_0.8fr]">
+        <div class="space-y-4">
+          <div class="flex items-center gap-3 font-display text-sm font-semibold uppercase tracking-[0.24em]">
+            <span class="brand-mark" aria-hidden="true"></span>
+            TinyTaskMac
+          </div>
+          <p class="max-w-lg text-sm leading-7 text-sand/65">
+            A native macOS macro tool for long gameplay loops, timed interrupt routines, and controlled playback in one target app at a time.
+          </p>
+          <p class="text-xs uppercase tracking-[0.24em] text-sand/40">Version <span data-release-version>Loading…</span></p>
+        </div>
+        <div class="space-y-3 text-sm text-sand/70">
+          <p class="footer-heading">Downloads</p>
+          <a class="footer-link" href="/download/macos">macOS</a>
+          <a class="footer-link" href="#roadmap">Windows status</a>
+          <a class="footer-link" href="#roadmap">Linux status</a>
+        </div>
+        <div class="space-y-3 text-sm text-sand/70">
+          <p class="footer-heading">Support</p>
+          <a class="footer-link" href="/support">Support</a>
+          <a class="footer-link" href="/privacy">Privacy</a>
+          <a class="footer-link" data-release-notes-link href="https://github.com/hugogarza/tinytask-mac/releases">Release notes</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
